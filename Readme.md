@@ -2,7 +2,7 @@
 target : dependancies</br>
 	commands</br>
 </br>
-###Compiler Flags</br>
+### Compiler Flags</br>
 -Werror = Treats all warnings as errors</br>
 -Wall = Enable common warnings</br>
 -Wextra = Enable additional warnings not included in Wall</br>
@@ -11,6 +11,7 @@ target : dependancies</br>
 -m32, -m64 = Generate code for 32 bit / 64 bit platform</br>
 -D<MACRO>=<value> , -D<MACRO> = Use to define macros and conditionally compile code</br>
 -fPIC: Generate position-independent code, for shared library. So that code can be loaded at any point.</br>
+-j<number> This is used to parallel build multiple targets</br>
 </br>
 $@ - target</br>
 $< - first dependancy</br>
@@ -40,22 +41,22 @@ $(VAR)</br>
 SRC = $(wildcard src/*.c)   # Collect all file in src with .c ending</br>
 OBJ = $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o) 			# replace names</br>
 </br>
+### Shell</br>
 $(shell <cmd>)   # Run shell command</br>
 </br>
--j<number> This is used to parallel build multiple targets</br>
+### Example</br>
+g++ -Wall -Wextra -Werror -o Main main.cpp -I<path> -L<path> -l<lib_name></br>
 </br>
-Example</br>
-g++ -Wall -Wextra -Werror -c -o main.o main.cpp -I<path> -L<path> -l<lib_name></br>
-</br>
-For shared library</br>
+### For shared library</br>
 g++ -o <lib_name> <files> -shared</br>
 </br>
-For static library</br>
+### For static library</br>
 ar rcs <lib_name> <files> </br>
 r: Insert object files into the archive, replacing older files if necessary.</br>
 c: Create the archive if it doesn't already exist.</br>
 s: Index the archive (create a symbol table) for faster linking.</br>
 </br>
+### Other Makefiles</br>
 To run another makefile from one makefile</br>
 $(MAKE) -C <directory> <target></br>
 </br>
