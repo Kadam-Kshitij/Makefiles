@@ -2,7 +2,7 @@
 target : dependancies</br>
 	commands</br>
 </br>
-Compiler Flags</br>
+###Compiler Flags</br>
 -Werror = Treats all warnings as errors</br>
 -Wall = Enable common warnings</br>
 -Wextra = Enable additional warnings not included in Wall</br>
@@ -17,20 +17,24 @@ $< - first dependancy</br>
 $^ - all dependancy</br>
 $? - all dependancy that are newer than target</br>
 </br>
+### Includes and library</br>
 -I<path> - Consider the path for finding include files</br>
 -L<path> - Consider the path for finding libraries for linking</br>
 -l<lib_name> - Link library</br>
 </br>
+### Phony</br>
 If there is a file named clean. And we run make clean, it will consider clean as a</br>
 filename and will not execute the clean target, considering the file to be uptodate.</br>
 To make it run the clean target, we need to declare clean as .PHONY</br>
 .PHONY : clean install obj/add.o</br>
 Targets added in phony are executed compulsary even if up to date</br>
 </br>
+### Variables</br>
 Declaring and using a variable</br>
 VAR = value</br>
 $(VAR)</br>
 </br>
+### Library </br>
 -static - Force linker to use static library instead of shared</br>
 </br>
 SRC = $(wildcard src/*.c)   # Collect all file in src with .c ending</br>
