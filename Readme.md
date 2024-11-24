@@ -1,3 +1,4 @@
+<pre>
 ### Basic syntax</br>
 target : dependancies</br>
 	commands</br>
@@ -62,3 +63,4 @@ $(MAKE) -C <directory> <target></br>
 </br>
 To include another makefile</br>
 include other-makefile.mk</br>
+</pre>
