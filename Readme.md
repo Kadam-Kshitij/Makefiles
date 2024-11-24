@@ -1,6 +1,6 @@
 ### Basic syntax</br>
 target : dependancies</br>
-emsp	commands</br>
+&emsp;	commands</br>
 </br>
 ### Compiler Flags</br>
 -Werror = Treats all warnings as errors</br>
