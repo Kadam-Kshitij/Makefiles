@@ -9,7 +9,7 @@ target : dependancies</br>
 -g = Add debug info</br>
 -c = Compile source files into object files without linking</br>
 -m32, -m64 = Generate code for 32 bit / 64 bit platform</br>
--D<macro>=<val> , -D<macro> = Use to define macros and conditionally compile code</br>
+-Dmacro=val , -Dmacro = Use to define macros and conditionally compile code</br>
 -fPIC: Generate position-independent code, for shared library. So that code can be loaded at any point.</br>
 -j<number> This is used to parallel build multiple targets</br>
 </br>
@@ -51,14 +51,14 @@ g++ -Wall -Wextra -Werror -o Main main.cpp -I<path> -L<path> -l<lib_name></br>
 g++ -o <lib_name> <files> -shared</br>
 </br>
 ### For static library</br>
-ar rcs <lib_name> <files> </br>
+ar rcs <ib_name files </br>
 r: Insert object files into the archive, replacing older files if necessary.</br>
 c: Create the archive if it doesn't already exist.</br>
 s: Index the archive (create a symbol table) for faster linking.</br>
 </br>
 ### Other Makefiles</br>
 To run another makefile from one makefile</br>
-$(MAKE) -C <directory> <target></br>
+$(MAKE) -C directory target</br>
 </br>
 To include another makefile</br>
 include other-makefile.mk</br>
