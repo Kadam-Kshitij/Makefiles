@@ -1,4 +1,4 @@
-### Basic syntax</br>
+  ### Basic syntax</br>
 target : dependancies</br>
 &emsp;	commands</br>
 </br>
@@ -9,7 +9,7 @@ target : dependancies</br>
 -g = Add debug info</br>
 -c = Compile source files into object files without linking</br>
 -m32, -m64 = Generate code for 32 bit / 64 bit platform</br>
--D<MACRO>=<value> , -D<MACRO> = Use to define macros and conditionally compile code</br>
+-D<macro>=<val> , -D<macro> = Use to define macros and conditionally compile code</br>
 -fPIC: Generate position-independent code, for shared library. So that code can be loaded at any point.</br>
 -j<number> This is used to parallel build multiple targets</br>
 </br>
