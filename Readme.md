@@ -1,7 +1,6 @@
-<pre>
 ### Basic syntax</br>
 target : dependancies</br>
-	commands</br>
+emsp	commands</br>
 </br>
 ### Compiler Flags</br>
 -Werror = Treats all warnings as errors</br>
@@ -63,4 +62,3 @@ $(MAKE) -C <directory> <target></br>
 </br>
 To include another makefile</br>
 include other-makefile.mk</br>
-</pre>
