@@ -1,5 +1,5 @@
-###Basic syntax
-target : dependancies
+### Basic syntax<\br>
+target : dependancies<\br>
 	commands
 
 Compiler Flags
