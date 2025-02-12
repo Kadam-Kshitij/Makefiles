@@ -59,3 +59,5 @@ $(MAKE) -C directory target</br>
 </br>
 To include another makefile</br>
 include other-makefile.mk</br>
+
+`g++ -DMACRO=1 -o target main.cpp`
