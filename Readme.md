@@ -35,8 +35,8 @@ Targets added in phony are executed compulsary even if up to date</br>
 Declaring and using a variable</br>
 VAR = value</br>
 $(VAR)</br>
-`SRC = $(wildcard src/*.c)   # Collect all file in src with .c ending</br>`
-`OBJ = $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o) 			# replace names</br>`
+`SRC = $(wildcard src/*.c)   # Collect all file in src with .c ending`</br>
+`OBJ = $(SRC:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o) 			# replace names`</br>
 </br>
 ### Shell</br>
 $(shell cmd)   # Run shell command</br>
